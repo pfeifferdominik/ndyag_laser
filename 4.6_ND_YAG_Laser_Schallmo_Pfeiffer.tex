@@ -6,17 +6,18 @@
 \usepackage{hyperref}
 \usepackage{units}
 \usepackage{upgreek}
-\usepackage{biblatex}
+\usepackage{Biblatex}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{subfigure}
 \usepackage[figure]{hypcap}
 
+
 \title{Nd:YAG}
 \subtitle{	\begin{tabular}{p{8cm}ll}
 Benedikt Paul Schallmo   &   Dominik Pfeiffer \\ Matrikelnummer: 2686286  &   Matrikelnummer: 2913632       \\ email: \textaccent{ benediktschallmo@yahoo.de} & email: \textaccent{dominik@diepfeiffers.de}  
 			\end{tabular} }
-\subsubtitle{ \\Versuchsbetreuung : Dr. Mathias Sinther \\ Datum der Durchführung: 22.05.2027 \\ Abgabetermin: 12.06.2017    }
+\subsubtitle{ \\Versuchsbetreuung : Dr. Matthias Sinther \\ Datum der Durchführung: 22.05.2027 \\ Abgabetermin: 12.06.2017    }
 \institution{Institut für Angewandte Physik}
 \sponsor{Hiermit erklären wir, dass wir die vorliegende Arbeit bzw. Leistung eigenständig, ohne fremde Hilfe und nur unter Verwendung der angegebenen Hilfsmittel angefertigt haben. Alle übernommenen Textstellen aus der Literatur beziehungsweise dem Internet sind als solche kenntlich gemacht. Diese Arbeit hat in gleicher oder ähnlicher Form noch keiner Prüfungsbehörde vorgelegen. \\\\ 
 \begin{tabular}{lp{2em}lp{2em}l}
@@ -40,10 +41,12 @@ Benedikt Paul Schallmo   &   Dominik Pfeiffer \\ Matrikelnummer: 2686286  &   Ma
 \chapter{Einleitung und Ziel des Versuchs}
 Ziel dieses Versuches ist es, die physikalischen Eigenschaften eines Halbleiterlasers und eines Festkörperlasers zu untersuchen. Hierfür soll zunächst das Verhalten des zum Pumpen verwendeten Halbleiterlasers näher betrachtet und dessen Kennlinie bezüglich Licht-/Pumpleistung aufgenommen werden. Anschließend wird der durch diesen Halbleiterlaser gepumpte Nd:YAG-Laser näher untersucht und die optimalen Arbeitskonfigurationen herausgearbeitet um zuletzt mittels eines KTP-Kristalls die Physik der Frequenzverdopplung zu nutzen und einige Kenngrößen dieser zu bestimmen.
 \chapter{Physikalische Grundlagen}
+In folgendem Abschnitt sollen die zur Durchführung des Versuches notwendigen physikalischen Grundlagen kurz erläutert werden. Hierzu zählen vor Allem die Prozesse in Lasern als auch nichtlineare Optik.
 \section{Grundlagen Laser}
 \subsection{Laser allgemein}
 Das Akronym  \textbf{LASER} steht für "'\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation"`, zu deutsch: "'Lichtverstärkung durch induzierte Emission von Strahlung"` und weist bereits auf das Funktionsprinzip des Lasers hin. Durch die Absorption von Energie aus Stößen mit anderen Atomen oder elektromagnetischer Strahlung können in Atomen Elektronen auf höhere Energieniveaus gehoben werden. Durch den Übergang in ihren Grundzustand wird die Energiedifferenz der Niveaus in der Form elektromagnetischer Strahlung freigesetzt. Bei freien Atomen geschieht dies spontan und isotrop in den Raum, wobei sowohl Phase als auch Polarität des ausgesendeten Photons zufällig sind.\\
-Das Konzept der stimulierten Emission wurde zuerst von A. Einstein beschrieben, ca. 44 Jahre vor der Entwicklung des ersten Lasers (1960). Hierbei wird ein angeregtes Atom in ein geeignet gewähltes elektromagnetisches Strahlungsfeld eingebracht und so zur Emission eines dem stimulierenden Photon in Phase und Polarität übereinstimmenden Photons gebracht. Um nun über diesen Prozess das Strahlungsfeld zu verstärken, muss eine s.g. Besetzungsinversion erreicht werden. Damit ist gemeint, dass sich mehr Atome im angeregten Zustand befinden müssen als im Grundzustand. Nach der Stefan-Boltzman-Verteilung ist aber der energetisch niedrigere Grundzustand im thermischen Gleichgewicht überwiegend besetzt und das Strahlungsfeld wird nicht verstärkt oder sogar abgeschwächt. Eine Besetzungsinversion ist in einem Zwei-Niveau-System (Grundzustand und ein angeregter Zustand) so instabil, dass verwendete Laser mindesten ein Drei-Niveau-System, wenn nicht sogar ein höheres Mehr-Niveau-System aufweisen \footcite{prot1}.\\
+Das Konzept der stimulierten Emission wurde zuerst von A. Einstein beschrieben, ca. 44 Jahre vor der Entwicklung des ersten Lasers (1960). Hierbei wird ein angeregtes Atom in ein geeignet gewähltes elektromagnetisches Strahlungsfeld eingebracht und so zur Emission eines dem stimulierenden Photon in Phase und Polarität übereinstimmenden Photons gebracht. Um nun über diesen Prozess das Strahlungsfeld zu verstärken, muss eine s.g. Besetzungsinversion erreicht werden. Damit ist gemeint, dass sich mehr Atome im angeregten Zustand befinden müssen als im Grundzustand. Nach der Stefan-Boltzman-Verteilung ist aber der energetisch niedrigere Grundzustand im thermischen Gleichgewicht überwiegend besetzt und das Strahlungsfeld wird nicht verstärkt oder sogar abgeschwächt. Eine Besetzungsinversion ist in einem Zwei-Niveau-System (Grundzustand und ein angeregter Zustand) so instabil, dass verwendete Laser mindesten ein Drei-Niveau-System, wenn nicht sogar ein höheres Mehr-Niveau-System aufweisen \cite{prot1}.\\
+Der im Laufe des Versuches aufzubauende Nd:YAG-Laser arbeitet mit einem 4-Niveau-System.
 \begin{figure}[H]
 \centering
    	\begin{minipage}[b]{0.9\textwidth}
@@ -53,7 +56,38 @@ Das Konzept der stimulierten Emission wurde zuerst von A. Einstein beschrieben, 
 \caption{Schematische Darstellung von Zwei-, Drei- und Vier-Niveau-Lasersystemen} 	
 \end{figure}
 \subsection{Halbleiter-Laser}
+Kurz nach der Entwicklung der ersten Laser um 1960, entdeckte man auch in Halbleiterdioden Lasertätigkeit. Zunächst konnten Halbleiterlaser jedoch nur gepulst und bei geringen Temperaturen von $T<100\,\si{K}$ betrieben werden. Ab ca. 1970 konnte ein kontinuierlicher Betrieb bei Raumtemperaturen realisiert werden. Heutzutage sind Laserdioden aus dem alltäglichen Leben kaum noch wegzudenken. Sie finden in Druckern, BluRay-Playern oder Laserpointern sowie in der Medizin flächendeckend Einsatz.\\
+Halbleiterlaser (HL-Laser) bestehen in der Regel aus III/V- und II/VI-Halbleitern und deren Legierungen, wobei die Römische Zahl die Hauptgruppe der Komponenten bezeichnet. Der in diesem Versuch verwendetet HL-Laser besteht aus GaAs/AlGaAs (Galliumarsenid/Alluminiumgalliumarsenid) in einer sg. Doppelheterostruktur. Der schematische Aufbau der Laserdiode ist in \ref{diau} zu sehen:
+\begin{figure}[H]
+\centering
+   	\begin{minipage}[b]{0.6\textwidth}
+   	\includegraphics[width=\textwidth]{graphics/diodaufb.PNG}
+  	\label{diau}
+   	\end{minipage}
+\caption{Aufbau der Laserdiode}\cite{anl} 	
+\end{figure}
+Die Besonderheit von Halbleiterlasern liegt darin, dass Aufgrund der dotierten (gewollt verunreinigten) Kristallstruktur die Energieniveaus nicht mehr in diskreter Form, sondern in quasi-kontinuierlichen Form vorliegen. In einer Halbleiterdiode werden ein p- und ein n-Dotiertes Material in Kontakt gebracht. Im so entstehenden p-n-Übergang findet der eigentliche Lasertätigkeit statt. Um die Laserbedingung, also eine Besetzungsinversion zwischen Leitungs- und Valenzband zu erreichen müssen die Energieintervalle der Bänder je zu mehr als $50\%$ mit Elektronen bzw. Löchern besetzt sein. Obwohl sich die Elektronen/Löcher innerhalb des jeweiligen Bandes zwar im thermischen Gleichgewicht befinden, gilt dies mitnichten für den Halbleiter als Ganzes. Über die Quasi-Fermi-Statistik lässt sich die Besetzungswahrscheinlichkeit f(W) der Energiezustände innerhalb der Bänder beschreiben:
+\begin{equation}
+f(W)=\frac{1}{1+\exp\left(W-W_{L,V}\right)/ (k_{b}T)}
+\end{equation}
+wobei $W_{L,V}$ die Quasi-Fermienergien des betrachteten Bandes ist. Damit ergibt sich die s.g. Bernard-Duraffourg'sche Laserbedingung zu $W_{g}<h\nu <W_{L}-W_{V}$. Bei einem HL-Laser wie dem hier verwendeten erreicht man die Besetzungsinversion über das Anlegen einer Spannung in Durchlassrichtung der Diode und den daraus resultierenden Strom. \\
+Um mehr stimulierte als spontane Emission zu erzwingen, muss wie bei jedem Laser ein Resonator Teil des Aufbaus sein. Bei HL-Lasern erreicht man dies, indem der Kristall entlang einer bestimmten Achse spaltet. Aufgrund des hohen Brechungsindexes des Kristalles gegenüber der Luft erzielt man so bereits eine Reflektivität von knapp 30\%, was ausreicht um Lasertätigkeit zu ermöglichen. Um das Laserlicht in bestimmte Richtungen zu führen, bettet man das aktive Medium (GaAs), in der die Rekombination von Elektronen und Löchern stattfinden soll, oftmals in andere Materialien mit niedrigerem Brechungsindex und größerer Bandlücke (AlGaAs) ein. So kann die Effizienz der Laserdioden gesteigert werden.\\
+HL-Laser haben gegenüber anderen Lasersystemen einige Besonderheiten:
+\begin{itemize}
+\item Größe: HL-Laser lassen sich sehr kompakt bauen und passen somit auf kleinsten Raum, was vor allem bei einer Anwendung in der Technik von großem Vorteil ist.
+\item Effizienz: Laserdioden erreichen mittlerweile Effizienzgarde von bis zu $70\%$ und sind somit deutlich effizienter als z.B. ein He-Ne-Laser.
+\item Durchstimmbarkeit: Dieser Punkt ist Vor- und Nachteil zugleich, denn die emittierte Wellenlänge der Laserdiode ist empfindlich von den Faktoren Temperatur und Pumpstrom Abhängig. Für die im Versuch verwendete Diode gelten die Abhängigkeiten: $0,25\,\si{nm}/\,\si{K}$ für Temperatur und $0,05\,\si{nm}/\,\si{mA}$. Dies kann genutzt werden, um wie in diesem Fall den optimalen Arbeitspunkt für das Pumpen des Nd:YAG Lasers zu finden, kann aber bei einer gewünschten Stabilität des Lasers auch zu Problemen führen, wenn eine Temperaturstabilität nicht ausreichend gewährleistet ist.
+\item Kosten: Die Herstellungskosten von Halbleiterbauteilen wie Laserdioden belaufen sich auf einen Bruchteil von anderen Lasersystemen.
+\end{itemize}\cite{anl,laser}
 \subsection{Nd:YAG-Laser}
+\begin{figure}[H]
+\centering
+   	\begin{minipage}[b]{0.5\textwidth}
+   	\includegraphics[width=\textwidth]{graphics/ndyagschem.PNG}
+  	\label{ndschem}
+   	\end{minipage}
+\caption{Energienivauschema des Nd:YAG-Lasers}\cite{anl} 	
+\end{figure}
 \section{Nichtlineare Optik bene}
 \subsection{Grundlagen}
 \subsection{Frequenzverdopplung}
@@ -74,11 +108,11 @@ Bei der Frequenzkonversion oder Frequenzverdopplung entsteht bei der Bestrahlung
 
 		
 
-\renewcommand{\bibname}{Literaturverzeichnis}
+\renewcommand{\bibname}{Literatur}
 \begin{thebibliography}{0}
-\bibitem {prot1} Protokoll zum Versuch 4.4: Holographie, Tatjana Beynsberger und Dominik Pfeiffer 
-\bibitem {}
-\bibitem {}
+\bibitem{prot1} Protokoll zum Versuch 4.4: Holographie, Tatjana Beynsberger und Dominik Pfeiffer 
+\bibitem{anl} Anleitung zum Versuch 4.6, Version 1.6 (06.06.2013)
+\bibitem{laser} Laser, F.K. Kneubühl und M.W. Sigrist, Teubner Verlag (Literaturmappe)
 \end{thebibliography} 	
 
 
