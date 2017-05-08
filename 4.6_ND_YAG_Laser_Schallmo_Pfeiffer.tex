@@ -6,17 +6,18 @@
 \usepackage{hyperref}
 \usepackage{units}
 \usepackage{upgreek}
-\usepackage{biblatex}
+\usepackage{Biblatex}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{subfigure}
 \usepackage[figure]{hypcap}
 
+
 \title{Nd:YAG}
 \subtitle{	\begin{tabular}{p{8cm}ll}
 Benedikt Paul Schallmo   &   Dominik Pfeiffer \\ Matrikelnummer: 2686286  &   Matrikelnummer: 2913632       \\ email: \textaccent{ benediktschallmo@yahoo.de} & email: \textaccent{dominik@diepfeiffers.de}  
 			\end{tabular} }
-\subsubtitle{ \\Versuchsbetreuung : Dr. Mathias Sinther \\ Datum der Durchführung: 22.05.2027 \\ Abgabetermin: 12.06.2017    }
+\subsubtitle{ \\Versuchsbetreuung : Dr. Matthias Sinther \\ Datum der Durchführung: 22.05.2027 \\ Abgabetermin: 12.06.2017    }
 \institution{Institut für Angewandte Physik}
 \sponsor{Hiermit erklären wir, dass wir die vorliegende Arbeit bzw. Leistung eigenständig, ohne fremde Hilfe und nur unter Verwendung der angegebenen Hilfsmittel angefertigt haben. Alle übernommenen Textstellen aus der Literatur beziehungsweise dem Internet sind als solche kenntlich gemacht. Diese Arbeit hat in gleicher oder ähnlicher Form noch keiner Prüfungsbehörde vorgelegen. \\\\ 
 \begin{tabular}{lp{2em}lp{2em}l}
@@ -40,10 +41,11 @@ Benedikt Paul Schallmo   &   Dominik Pfeiffer \\ Matrikelnummer: 2686286  &   Ma
 \chapter{Einleitung und Ziel des Versuchs}
 Ziel dieses Versuches ist es, die physikalischen Eigenschaften eines Halbleiterlasers und eines Festkörperlasers zu untersuchen. Hierfür soll zunächst das Verhalten des zum Pumpen verwendeten Halbleiterlasers näher betrachtet und dessen Kennlinie bezüglich Licht-/Pumpleistung aufgenommen werden. Anschließend wird der durch diesen Halbleiterlaser gepumpte Nd:YAG-Laser näher untersucht und die optimalen Arbeitskonfigurationen herausgearbeitet um zuletzt mittels eines KTP-Kristalls die Physik der Frequenzverdopplung zu nutzen und einige Kenngrößen dieser zu bestimmen.
 \chapter{Physikalische Grundlagen}
+In folgendem Abschnitt sollen die zur Durchführung des Versuches notwendigen physikalischen Grundlagen kurz erläutert werden. Hierzu zählen vor Allem die Prozesse in Lasern als auch nichtlineare Optik.
 \section{Grundlagen Laser}
 \subsection{Laser allgemein}
 Das Akronym  \textbf{LASER} steht für "'\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation"`, zu deutsch: "'Lichtverstärkung durch induzierte Emission von Strahlung"` und weist bereits auf das Funktionsprinzip des Lasers hin. Durch die Absorption von Energie aus Stößen mit anderen Atomen oder elektromagnetischer Strahlung können in Atomen Elektronen auf höhere Energieniveaus gehoben werden. Durch den Übergang in ihren Grundzustand wird die Energiedifferenz der Niveaus in der Form elektromagnetischer Strahlung freigesetzt. Bei freien Atomen geschieht dies spontan und isotrop in den Raum, wobei sowohl Phase als auch Polarität des ausgesendeten Photons zufällig sind.\\
-Das Konzept der stimulierten Emission wurde zuerst von A. Einstein beschrieben, ca. 44 Jahre vor der Entwicklung des ersten Lasers (1960). Hierbei wird ein angeregtes Atom in ein geeignet gewähltes elektromagnetisches Strahlungsfeld eingebracht und so zur Emission eines dem stimulierenden Photon in Phase und Polarität übereinstimmenden Photons gebracht. Um nun über diesen Prozess das Strahlungsfeld zu verstärken, muss eine s.g. Besetzungsinversion erreicht werden. Damit ist gemeint, dass sich mehr Atome im angeregten Zustand befinden müssen als im Grundzustand. Nach der Stefan-Boltzman-Verteilung ist aber der energetisch niedrigere Grundzustand im thermischen Gleichgewicht überwiegend besetzt und das Strahlungsfeld wird nicht verstärkt oder sogar abgeschwächt. Eine Besetzungsinversion ist in einem Zwei-Niveau-System (Grundzustand und ein angeregter Zustand) so instabil, dass verwendete Laser mindesten ein Drei-Niveau-System, wenn nicht sogar ein höheres Mehr-Niveau-System aufweisen \footcite{prot1}.\\
+Das Konzept der stimulierten Emission wurde zuerst von A. Einstein beschrieben, ca. 44 Jahre vor der Entwicklung des ersten Lasers (1960). Hierbei wird ein angeregtes Atom in ein geeignet gewähltes elektromagnetisches Strahlungsfeld eingebracht und so zur Emission eines dem stimulierenden Photon in Phase und Polarität übereinstimmenden Photons gebracht. Um nun über diesen Prozess das Strahlungsfeld zu verstärken, muss eine s.g. Besetzungsinversion erreicht werden. Damit ist gemeint, dass sich mehr Atome im angeregten Zustand befinden müssen als im Grundzustand. Nach der Stefan-Boltzman-Verteilung ist aber der energetisch niedrigere Grundzustand im thermischen Gleichgewicht überwiegend besetzt und das Strahlungsfeld wird nicht verstärkt oder sogar abgeschwächt. Eine Besetzungsinversion ist in einem Zwei-Niveau-System (Grundzustand und ein angeregter Zustand) so instabil, dass verwendete Laser mindesten ein Drei-Niveau-System, wenn nicht sogar ein höheres Mehr-Niveau-System aufweisen \cite{prot1}.\\
 \begin{figure}[H]
 \centering
    	\begin{minipage}[b]{0.9\textwidth}
@@ -53,7 +55,23 @@ Das Konzept der stimulierten Emission wurde zuerst von A. Einstein beschrieben, 
 \caption{Schematische Darstellung von Zwei-, Drei- und Vier-Niveau-Lasersystemen} 	
 \end{figure}
 \subsection{Halbleiter-Laser}
+\begin{figure}[H]
+\centering
+   	\begin{minipage}[b]{0.6\textwidth}
+   	\includegraphics[width=\textwidth]{graphics/diodaufb.PNG}
+  	\label{diau}
+   	\end{minipage}
+\caption{Aufbau der Laserdiode}\cite{anl} 	
+\end{figure}
 \subsection{Nd:YAG-Laser}
+\begin{figure}[H]
+\centering
+   	\begin{minipage}[b]{0.5\textwidth}
+   	\includegraphics[width=\textwidth]{graphics/ndyagschem.PNG}
+  	\label{ndschem}
+   	\end{minipage}
+\caption{Energienivauschema des Nd:YAG-Lasers}\cite{anl} 	
+\end{figure}
 \section{Nichtlineare Optik bene}
 \subsection{Grundlagen}
 \subsection{Frequenzverdopplung}
@@ -74,11 +92,10 @@ Bei der Frequenzkonversion oder Frequenzverdopplung entsteht bei der Bestrahlung
 
 		
 
-\renewcommand{\bibname}{Literaturverzeichnis}
+\renewcommand{\bibname}{Literatur}
 \begin{thebibliography}{0}
-\bibitem {prot1} Protokoll zum Versuch 4.4: Holographie, Tatjana Beynsberger und Dominik Pfeiffer 
-\bibitem {}
-\bibitem {}
+\bibitem{prot1} Protokoll zum Versuch 4.4: Holographie, Tatjana Beynsberger und Dominik Pfeiffer 
+\bibitem{anl} Anleitung zum Versuch 4.6, Version 1.6 (06.06.2013)
 \end{thebibliography} 	
 
 
