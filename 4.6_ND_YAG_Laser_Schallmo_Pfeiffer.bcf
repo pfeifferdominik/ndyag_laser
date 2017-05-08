@@ -2144,5 +2144,7 @@
     <bcf:citekey order="1">prot1</bcf:citekey>
     <bcf:citekey order="2">anl</bcf:citekey>
     <bcf:citekey order="3">anl</bcf:citekey>
+    <bcf:citekey order="3">laser</bcf:citekey>
+    <bcf:citekey order="4">anl</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
