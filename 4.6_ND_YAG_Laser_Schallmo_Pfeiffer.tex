@@ -6,12 +6,12 @@
 \usepackage{hyperref}
 \usepackage{units}
 \usepackage{upgreek}
-\usepackage{Biblatex}
+\usepackage{biblatex}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{subfigure}
 \usepackage[figure]{hypcap}
-
+\usepackage{amsmath}
 
 \title{Nd:YAG}
 \subtitle{	\begin{tabular}{p{8cm}ll}
@@ -75,11 +75,12 @@ Um mehr stimulierte als spontane Emission zu erzwingen, muss wie bei jedem Laser
 HL-Laser haben gegenüber anderen Lasersystemen einige Besonderheiten:
 \begin{itemize}
 \item Größe: HL-Laser lassen sich sehr kompakt bauen und passen somit auf kleinsten Raum, was vor allem bei einer Anwendung in der Technik von großem Vorteil ist.
-\item Effizienz: Laserdioden erreichen mittlerweile Effizienzgarde von bis zu $70\%$ und sind somit deutlich effizienter als z.B. ein He-Ne-Laser.
-\item Durchstimmbarkeit: Dieser Punkt ist Vor- und Nachteil zugleich, denn die emittierte Wellenlänge der Laserdiode ist empfindlich von den Faktoren Temperatur und Pumpstrom Abhängig. Für die im Versuch verwendete Diode gelten die Abhängigkeiten: $0,25\,\si{nm}/\,\si{K}$ für Temperatur und $0,05\,\si{nm}/\,\si{mA}$. Dies kann genutzt werden, um wie in diesem Fall den optimalen Arbeitspunkt für das Pumpen des Nd:YAG Lasers zu finden, kann aber bei einer gewünschten Stabilität des Lasers auch zu Problemen führen, wenn eine Temperaturstabilität nicht ausreichend gewährleistet ist.
+\item Effizienz: Laserdioden erreichen mittlerweile Effizienzgarde von bis zu 70\% und sind somit deutlich effizienter als z.B. ein He-Ne-Laser.
+\item Durchstimmbarkeit: Dieser Punkt ist Vor- und Nachteil zugleich, denn die emittierte Wellenlänge der Laserdiode ist empfindlich von den Faktoren Temperatur und Pumpstrom Abhängig. Für die im Versuch verwendete Diode gelten die Abhängigkeiten: $0,25\,\si{nm}/\,\si{K}$ für Temperatur und $0,05\,\si{nm}/\,\si{mA}$. Dies kann genutzt werden, um wie in diesem Fall den optimalen Arbeitspunkt für das Pumpen des Nd:YAG Lasers zu finden, kann aber bei einer gewünschten Stabilität des Lasers auch zu Problemen führen, wenn eine Temperaturkonstanz nicht ausreichend gewährleistet ist.
 \item Kosten: Die Herstellungskosten von Halbleiterbauteilen wie Laserdioden belaufen sich auf einen Bruchteil von anderen Lasersystemen.
 \end{itemize}\cite{anl,laser}
 \subsection{Nd:YAG-Laser}
+Der Nd:YAG Laser zählt zu den Festkörperlasern. In den Wirtskristall Yttrium-Aluminium-Granat $(Y_{3}Al_{5}O_{12})$ werden Neodym Störstellen eingebracht, es handelt sich also um einen Neodym-dotierten YAG-Kristall. Er findet weit verbreitet Anwendung wie zum Beispiel in der Technik zum Schweißen von Werkstücken oder in der Medizin bei der Behandlung von Nierensteinen. Das Energiespektrum des Lasers ist in \ref{ndschem} zu sehen:
 \begin{figure}[H]
 \centering
    	\begin{minipage}[b]{0.5\textwidth}
@@ -88,9 +89,18 @@ HL-Laser haben gegenüber anderen Lasersystemen einige Besonderheiten:
    	\end{minipage}
 \caption{Energienivauschema des Nd:YAG-Lasers}\cite{anl} 	
 \end{figure}
+Im Versuch wird eine Laserdiode zum optischen Pumpen des Nd:YAG Kristalls verwendet. Gepumpt wird der Laser aus dem $4I_{9/2}$ in die $4F_{6/2}$ Niveaus über Photonen mit einer Wellenlänge von $500\,\si{nm}<\lambda<900\,\si{nm}$, wobei folgende Wellenlängen mit hoher Effizienz gepumpt werden können:
+\begin{align}
+\lambda_{1}&=804,4\,\si{nm}\\
+\lambda_{2}&=808,4\,\si{nm}\\
+\lambda_{3}&=812,9\,\si{nm}\\
+\lambda_{4}&=817,3\,\si{nm}\\
+\end{align}
+In diesem Bereich liegt auch die Emission des zum Pumpen verwendeten Diodenlasers, weshalb eine Kombination der beiden mit einer hohen Gesamteffizienz betrieben werden kann.\\
+Von den oberen Pumpniveaus gehen die Elektronen nach einer kurzen Lebensdauer strahlungslos in den $4F_{3/2}$, das obere Laserniveau über. Dieser Zustand ist metastabil und besitzt aufgrund der verbotenen elektrischen Dipolstrahlung eine Lebensdauer von $240\,\si{\mu s}$. Vom oberen Lasernivau gibt es nun 4 Übergänge in das aufgespaltene untere Laserniveau, von denen vor allem der zu 60\% vorkommende Übergang in das $4I_{11/2}$ Niveau mit einer Wellenlänge von $\lambda=1064\,\si{nm}$ interessant ist. Dieser ist offensichtlich nicht im von Menschen sichtbaren Wellenlängen Bereich von $\approx 400\,\si{nm}\,-\,\approx 800\,\si{nm}$, lässt sich aber über die Frequenzverdopplung mittels eines KTP-Kristalles in Licht der Wellenlänge $\lambda=532\,\si{nm}$ konvertieren, welche im grünen Bereich des sichtbaren Spektrums liegt \ref{freq} \cite{anl,laser2,laser3}
 \section{Nichtlineare Optik bene}
 \subsection{Grundlagen}
-\subsection{Frequenzverdopplung}
+\subsection{Frequenzverdopplung}\label{freq}
 Bei der Frequenzkonversion oder Frequenzverdopplung entsteht bei der Bestrahlung bestimmter Materialien mit Licht hoher Intensität Licht mit der doppelten Frequenz. Die elektromagnetische Strahlung regt im Material die Elektronen zum Schwingen an. Die Elektronen schwingen dabei mit der gleichen Frequenz wie die einfallende Strahlung, und erzeugen somit erneut elektromagnetische Strahlung. Bei hohen Intensität werden die Elektronen weiter ausgelenkt und die Rückstellkräfte sind nicht mehr proportional zur Auslenkung. Die dielektrische Polarisation des Materials ist nicht mehr linear vom elektrischen Feld abhängig, sondern es treten Terme höherer Ordnung auf. Dies führt dazu, dass die Polarisation außer der Frequenz der einfallenden Welle $\omega$ auch höhere Harmonische $m\cdot \omega$ ($m=2,3,4,...$) enthält. Die elektrischen Dipole strahlen daher auch elektromagnetische Wellen auf höheren harmonischen ab. Die Frequenzverdopplung wird in diesem Zusammenhang als SHG (second harmonic generation) bezeichnet, die Frequenzverdreifachung als THG (third harmonic generation).	
 \chapter{Versuchsdurchführung und Beobachtung}
   
@@ -110,9 +120,11 @@ Bei der Frequenzkonversion oder Frequenzverdopplung entsteht bei der Bestrahlung
 
 \renewcommand{\bibname}{Literatur}
 \begin{thebibliography}{0}
-\bibitem{prot1} Protokoll zum Versuch 4.4: Holographie, Tatjana Beynsberger und Dominik Pfeiffer 
-\bibitem{anl} Anleitung zum Versuch 4.6, Version 1.6 (06.06.2013)
-\bibitem{laser} Laser, F.K. Kneubühl und M.W. Sigrist, Teubner Verlag (Literaturmappe)
+\bibitem {prot1} Protokoll zum Versuch 4.4: Holographie, Tatjana Beynsberger und Dominik Pfeiffer 
+\bibitem {anl} Anleitung zum Versuch 4.6, Version 1.6 (06.06.2013)
+\bibitem {laser} Laser, F.K. Kneubühl und M.W. Sigrist, Teubner Verlag (Literaturmappe)
+\bibitem {laser2} Anleitung zum Versuch 8 Nd:YAG-Laser, RTHW Aachen, Stand 12.03.2012
+\bibitem {laser3} www.laserschneiden-marktplatz.de/lasertypen/ndyag-laser (Zugriff: 09.05.2017)
 \end{thebibliography} 	
 
 
