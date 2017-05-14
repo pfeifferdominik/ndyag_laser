@@ -39,9 +39,9 @@ Benedikt Paul Schallmo   &   Dominik Pfeiffer \\ Matrikelnummer: 2686286  &   Ma
 
 
 \chapter{Einleitung und Ziel des Versuchs}
-Ziel dieses Versuches ist es, die physikalischen Eigenschaften eines Halbleiterlasers und eines Festkörperlasers zu untersuchen. Hierfür soll zunächst das Verhalten des zum Pumpen verwendeten Halbleiterlasers näher betrachtet und dessen Kennlinie bezüglich Licht-/Pumpleistung aufgenommen werden. Anschließend wird der durch diesen Halbleiterlaser gepumpte Nd:YAG-Laser näher untersucht und die optimalen Arbeitskonfigurationen herausgearbeitet um zuletzt mittels eines KTP-Kristalls die Physik der Frequenzverdopplung zu nutzen und einige Kenngrößen dieser zu bestimmen.
+Ziel dieses Versuches ist es, die physikalischen Eigenschaften eines Halbleiterlasers und eines Festkörperlasers zu untersuchen. Hierfür soll zunächst das Verhalten des zum Pumpen verwendeten Halbleiterlasers näher betrachtet und dessen Kennlinie bezüglich Licht-/Pumpleistung aufgenommen werden. Anschließend wird der durch diesen Halbleiterlaser gepumpte Nd:YAG-Laser näher untersucht und die optimalen Arbeitskonfigurationen herausgearbeitet um zuletzt mittels eines KTP-Kristalls das Phänomen der Frequenzverdopplung zu nutzen und einige Kenngrößen dieser zu bestimmen.
 \chapter{Physikalische Grundlagen}
-In folgendem Abschnitt sollen die zur Durchführung des Versuches notwendigen physikalischen Grundlagen kurz erläutert werden. Hierzu zählen vor Allem die Prozesse in Lasern als auch nichtlineare Optik.
+In folgendem Abschnitt sollen die zur Durchführung des Versuches notwendigen physikalischen Grundlagen kurz erläutert werden. Hierzu zählen vor Allem die Prozesse in Lasern als auch in der nichtlineare Optik.
 \section{Grundlagen Laser}
 \subsection{Laser allgemein}
 Das Akronym  \textbf{LASER} steht für "'\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation"`, zu deutsch: "'Lichtverstärkung durch induzierte Emission von Strahlung"` und weist bereits auf das Funktionsprinzip des Lasers hin. Durch die Absorption von Energie aus Stößen mit anderen Atomen oder elektromagnetischer Strahlung können in Atomen Elektronen auf höhere Energieniveaus gehoben werden. Durch den Übergang in ihren Grundzustand wird die Energiedifferenz der Niveaus in der Form elektromagnetischer Strahlung freigesetzt. Bei freien Atomen geschieht dies spontan und isotrop in den Raum, wobei sowohl Phase als auch Polarität des ausgesendeten Photons zufällig sind.\\
@@ -49,7 +49,7 @@ Das Konzept der stimulierten Emission wurde zuerst von A. Einstein beschrieben, 
 Der im Laufe des Versuches aufzubauende Nd:YAG-Laser arbeitet mit einem 4-Niveau-System.
 \begin{figure}[H]
 \centering
-   	\begin{minipage}[b]{0.9\textwidth}
+   	\begin{minipage}[b]{0.8\textwidth}
    	\includegraphics[width=\textwidth]{graphics/Lasersys.pdf}
   	\label{lasys}
    	\end{minipage}
@@ -80,7 +80,7 @@ HL-Laser haben gegenüber anderen Lasersystemen einige Besonderheiten:
 \item Kosten: Die Herstellungskosten von Halbleiterbauteilen wie Laserdioden belaufen sich auf einen Bruchteil von anderen Lasersystemen.
 \end{itemize}\cite{anl,laser}
 \subsection{Nd:YAG-Laser}
-Der Nd:YAG Laser zählt zu den Festkörperlasern. In den Wirtskristall Yttrium-Aluminium-Granat $(Y_{3}Al_{5}O_{12})$ werden Neodym Störstellen eingebracht, es handelt sich also um einen Neodym-dotierten YAG-Kristall. Er findet weit verbreitet Anwendung wie zum Beispiel in der Technik zum Schweißen von Werkstücken oder in der Medizin bei der Behandlung von Nierensteinen. Das Energiespektrum des Lasers ist in \ref{ndschem} zu sehen:
+Der Nd:YAG Laser zählt zu den Festkörperlasern. In den Wirtskristall Yttrium-Aluminium-Granat $(Y_{3}Al_{5}O_{12})$ werden Neodym Störstellen eingebracht, es handelt sich also um einen Neodym-dotierten YAG-Kristall. Er findet weit verbreitet Anwendung wie zum Beispiel in der Technik zum Schweißen von Werkstücken oder in der Medizin bei der Behandlung von Nierensteinen. Das Energiespektrum des Lasers ist in Abbildung\ref{ndschem} zu sehen:
 \begin{figure}[H]
 \centering
    	\begin{minipage}[b]{0.5\textwidth}
@@ -98,10 +98,31 @@ Im Versuch wird eine Laserdiode zum optischen Pumpen des Nd:YAG Kristalls verwen
 \end{align}
 In diesem Bereich liegt auch die Emission des zum Pumpen verwendeten Diodenlasers, weshalb eine Kombination der beiden mit einer hohen Gesamteffizienz betrieben werden kann.\\
 Von den oberen Pumpniveaus gehen die Elektronen nach einer kurzen Lebensdauer strahlungslos in den $4F_{3/2}$, das obere Laserniveau über. Dieser Zustand ist metastabil und besitzt aufgrund der verbotenen elektrischen Dipolstrahlung eine Lebensdauer von $240\,\si{\mu s}$. Vom oberen Lasernivau gibt es nun 4 Übergänge in das aufgespaltene untere Laserniveau, von denen vor allem der zu 60\% vorkommende Übergang in das $4I_{11/2}$ Niveau mit einer Wellenlänge von $\lambda=1064\,\si{nm}$ interessant ist. Dieser ist offensichtlich nicht im von Menschen sichtbaren Wellenlängen Bereich von $\approx 400\,\si{nm}\,-\,\approx 800\,\si{nm}$, lässt sich aber über die Frequenzverdopplung mittels eines KTP-Kristalles in Licht der Wellenlänge $\lambda=532\,\si{nm}$ konvertieren, welche im grünen Bereich des sichtbaren Spektrums liegt \ref{freq} \cite{anl,laser2,laser3}
-\section{Nichtlineare Optik bene}
-\subsection{Grundlagen}
+\section{Nichtlineare Optik}
+Phänomene der nichtlinearen Optik sind Konsequenzen der Modifikation der optischen Eigenschafte von Materialien bei der Anwesenheit von Licht. In der Regel besitzt nur Laserlicht ausreichend hohe Intensitäten, um die optischen Eigenschaften zu verändern. Die Phänomene werden als nichtlinear bezeichnet, da die Antwort auf das angelegte Feld, nichtlinear von der Intensität des Feldes abhängt. Betrachtet man die Abhängigkeit der Polarisation in der linearen konventionellen Optik, so ergibt sich, dass die Polarisation $\vec{P(t)}$ linear mit dem elektrischen Feld $\vec{E(t)}$ zusammenhängt. Die Relation ist über 
+\begin{align*}
+\vec{P(t)}=\varepsilon_0\chi^{(1)}\vec{E}(t)
+\end{align*}
+gegeben, wobei $\varepsilon_0$ die elektrische Feldkonstante bezeichnet und die Proportionalitätskonstante $\chi^{(1)}$ als elektrische Suszeptibilität bezeichnet wird. In der nichtlinearen Optik wird dieser Zusammenhang verallgemeinert und wird als Potenzreihe
+\begin{align*}
+\vec{P}(t)=\varepsilon_0 \left[ \chi^{(1)} \vec{E}(t) + \chi^{(2)} \vec{E}^2(t) +  \chi^{(3)}\vec{E}^3(t) + \dots \right]
+\end{align*} 
+dargestellt, wobei $\chi^{(2)}$ und $\chi^{(3)}$ als optische Suszeptibilitäten zweiter und dritter Ordnung bezeichnet werden. Dieser Zusammenhang, der voraussetzt, dass das Medium instantan antwortet, gilt jedoch nur unter Vernachlässigung von Absorption und Dispersion. Die Suszeptibilitäten hängen in der Regel noch von der Frequenz ab. Dabei beschreibt $\chi^{(1)}$ zum Beispiel Brechung und lineare Absorption, $\chi^{(2)}$ die Erzeugung der zweiten Harmonischen, das parametrische Mischen und die Erzeugung von Summen und Differenzfrequenzen und $\chi^{(3)}$ die Erzeugung der dritten Harmonischen, Raman- und Brillouin-Streuung und den Kerr-Effekt. [2,6]
+
+
 \subsection{Frequenzverdopplung}\label{freq}
-Bei der Frequenzkonversion oder Frequenzverdopplung entsteht bei der Bestrahlung bestimmter Materialien mit Licht hoher Intensität Licht mit der doppelten Frequenz. Die elektromagnetische Strahlung regt im Material die Elektronen zum Schwingen an. Die Elektronen schwingen dabei mit der gleichen Frequenz wie die einfallende Strahlung, und erzeugen somit erneut elektromagnetische Strahlung. Bei hohen Intensität werden die Elektronen weiter ausgelenkt und die Rückstellkräfte sind nicht mehr proportional zur Auslenkung. Die dielektrische Polarisation des Materials ist nicht mehr linear vom elektrischen Feld abhängig, sondern es treten Terme höherer Ordnung auf. Dies führt dazu, dass die Polarisation außer der Frequenz der einfallenden Welle $\omega$ auch höhere Harmonische $m\cdot \omega$ ($m=2,3,4,...$) enthält. Die elektrischen Dipole strahlen daher auch elektromagnetische Wellen auf höheren harmonischen ab. Die Frequenzverdopplung wird in diesem Zusammenhang als SHG (second harmonic generation) bezeichnet, die Frequenzverdreifachung als THG (third harmonic generation).	
+Bei der Frequenzverdopplung entsteht bei der Bestrahlung bestimmter Materialien mit Licht hoher Intensität Licht mit der doppelten Frequenz. Die elektromagnetische Strahlung regt im Material die Elektronen zum Schwingen an. Die Elektronen schwingen dabei mit der gleichen Frequenz wie die einfallende Strahlung, und erzeugen somit erneut elektromagnetische Strahlung. Bei hohen Intensität werden die Elektronen weiter ausgelenkt und die Rückstellkräfte sind nicht mehr proportional zur Auslenkung. Die dielektrische Polarisation des Materials ist nicht mehr linear vom elektrischen Feld abhängig, sondern es treten Terme höherer Ordnung auf. Dies führt dazu, dass die Polarisation außer der Frequenz der einfallenden Welle $\omega$ auch höhere Harmonische $m\cdot \omega$ ($m=2,3,4,...$) enthält. Die elektrischen Dipole strahlen daher auch elektromagnetische Wellen auf höheren Harmonischen ab. Die Erzeugung der zweiten Harmonischen resultiert aus dem Teil der atomaren Antwort, die quadratisch mit der Stärke des angelegten optischen Feldes zusammenhängt. Die Frequenzverdopplung, die Erzeugung der zweiten Harmonischen, wird wird auch als SHG (second harmonic generation) bezeichnet, die Frequenzverdreifachung als THG (third harmonic generation). 
+Das elektrische Feld, welches durch
+\begin{align*}
+\vec{E}(t)=\vec{E}\cdot\text{e}^{-i\omega t} + c.c.
+\end{align*}
+repräsentiert wird, fällt auf einen Kristall dessen Suszeptibilität zweiter Ordnung nicht Null ist, und erzeugt die nichtlineare Polarisation zweiter Ordnung
+\begin{align*}
+\vec{P}^{(2)}(t)=2\epsilon_0\chi^{(2)}EE^*+\left(\epsilon_0\chi^{(2)}E^2\text{e}^{-i2\omega t}+c.c.\right)
+\end{align*} 
+Die Polarisation zweiter Ordnung setzt sich aus einem Term mit Frequenz Null und einem Term mit Frequenz $2\omega$ zusammen. Der zweite Beitrag erzeugt Strahlung mit der doppelten Frequenz, wohingegen der erste Term keine elektromagnetischer Strahlung erzeugt, sondern erzeugt ein statisches elektrisches Feld im Kristall (optische Gleichrichtung).
+Anschaulich werden zwei Photonen der Frequenz $\omega$ zerstört und ein Photon der Frequenz $2\omega$ wird in einem einzelnen quantenmechanischen Prozess erzeugt. Die Frequenzverdopplung kann beispielsweise genutzt werden, um die Laserstrahlung des Nd:YAG-Lasers, der im nahen Infrarotbereich bei 1064 nm arbeitet, in den sichtbaren Spektralbereich bei 532 nm zu konvertieren. Von entscheidender Bedeutung für den Prozess der Frequenzverdopplung ist die Phasenanpassung. Die ursprüngliche Wellenlänge und die erzeugte doppelte Wellenlänge müssen im Kristall den gleichen Brechungsindex besitzen, da sonst destruktive Interferenz auftritt.
+[2,6,7]	
 \chapter{Versuchsdurchführung und Beobachtung}
   
      	
@@ -124,7 +145,10 @@ Bei der Frequenzkonversion oder Frequenzverdopplung entsteht bei der Bestrahlung
 \bibitem {anl} Anleitung zum Versuch 4.6, Version 1.6 (06.06.2013)
 \bibitem {laser} Laser, F.K. Kneubühl und M.W. Sigrist, Teubner Verlag (Literaturmappe)
 \bibitem {laser2} Anleitung zum Versuch 8 Nd:YAG-Laser, RTHW Aachen, Stand 12.03.2012
-\bibitem {laser3} www.laserschneiden-marktplatz.de/lasertypen/ndyag-laser (Zugriff: 09.05.2017)
+\bibitem {laser3} \url{www.laserschneiden-marktplatz.de/lasertypen/ndyag-laser} (Zugriff: 09.05.2017)
+\bibitem {6} Robert W. Boyd: Nonlinear Optics. Elsevier Ltd, Oxford, 3. edition, 2008.
+\bibitem {7} Literaturmappe im Anhang der Versuchsanleitung zum Versuch Hong-Ou-Mandel Effekt, TU Darmstadt
+\bibitem {8} Hecht, Eugene: Optics, 4. Edition, 12 August 2001
 \end{thebibliography} 	
 
 
