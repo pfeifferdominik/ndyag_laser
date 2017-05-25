@@ -139,8 +139,202 @@ Anschaulich werden zwei Photonen der Frequenz $\omega$ zerstört und ein Photon 
 \chapter{Auswertung}
 \chapter{Fazit}
 \chapter{Messdaten}
+Bestimmung der relativen Absorption. Messintervall $\delta T=2\,\si{°C}$, Fehler des Pumpstromes $\Delta I_{Pump}=2\,\si{mA}$, Fehler Temperatur $\Delta T=0,1\,\si{°C}$ Fehler Photostrom $\Delta I_{Photo}=0,2\,\si{mA}$ dieser muss jedoch noch der Skala entsprechend umgerechnet werden. Für diese Messung gilt: $30\,\si{mA}$ auf der Anzeige des Multimeters entsprechen einem Photostrom von $6\,\si{mA}$.
+\begin{table}[H]
+\renewcommand*{\arraystretch}{1.2}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline 
+T in °C & $I_{MK}$ in mA (Skala) & $I_{OK}$ in mA (Skala)\\
+\hline 
+10 & 7,9 & 18,0 \\ 
+\hline 
+12 & 4,2 & 18,0 \\ 
+\hline 
+14 & 3,6 & 17,9 \\ 
+\hline 
+16 & 3,3 & 18,0 \\ 
+\hline 
+18 & 3,1 & 18,1 \\ 
+\hline
+20 & 1,3 & 18,0 \\ 
+\hline
+22 & 2,1 & 17,9 \\ 
+\hline
+24 & 4,2 & 17,5? \\ 
+\hline
+26 & 6,9 & 17,9 \\ 
+\hline
+28 & 7,4 & 17,8 \\ 
+\hline
+30 & 6,6 & 17,3 \\ 
+\hline
+32 & 4,6 & 17,4 \\ 
+\hline
+34 & 4,5 & 17,2 \\ 
+\hline
+36 & 6,9 & 17,1 \\ 
+\hline
+38 & 8,5 & 17,0 \\ 
+\hline
+40 & 10,2 & 17,1 \\ 
+\hline
+\end{tabular} 
+\caption{Photostrom vor Umrechnung mit und ohne Nd:YAG Kristall in Abhängigkeit der Temperatur}\label{relabs}
+\end{table}
+
+Messdaten zur Arbeitsgeraden der Laserdiode. Fehler der Temperatur $\Delta T=0,2\,\si{°C}$, Fehler des Pumpstromes $\Delta I_{Pump}=1\,\si{mA}$
+
+\begin{table}[H]
+\renewcommand*{\arraystretch}{1.2}
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+$I_{Pump}$ in mA & T in °C\\
+\hline 
+700 & 19,8  \\ 
+\hline 
+675 & 20,0  \\ 
+\hline 
+650 & 20,2  \\ 
+\hline 
+625 & 20,3  \\ 
+\hline 
+600 & 20,5  \\ 
+\hline
+575 & 20,2 \\ 
+\hline
+550 & 21,1 \\ 
+\hline
+\end{tabular} 
+\caption{Wertepaare der Arbeitsgeraden für $\lambda =808,4\,\si{nm}$}\label{arbger}
+\end{table}
 
 
+Messdaten zur Kennlinie der Laserdiode.Es gelten die gleichen Fehler wie bisher für Pump- und Photostrom, sowie erneut die Umrechnung resultierend aus der Skala des Multimeters: $30\,\si{mA}$ auf der Anzeige des Multimeters entsprechen einem Photostrom von $6\,\si{mA}$. Die beiden letzten Messwerte wurden auf einer um eine Größenordnung kleineren Skala aufgenommen und auf die vorherige umgerechnet.
+\begin{table}[H]
+\renewcommand*{\arraystretch}{1.2}
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+$I_{Pump}$ in mA & $I_{Photo}$ in mA (Skala)\\
+\hline 
+700 & 16,8  \\ 
+\hline 
+650 & 15,3  \\ 
+\hline 
+600 & 13,8  \\ 
+\hline 
+550 & 12,1  \\ 
+\hline 
+500 & 10,4  \\ 
+\hline
+450 & 8,7 \\ 
+\hline
+400 & 6,5 \\ 
+\hline
+350 & 4,9 \\ 
+\hline
+300 & 3,1 \\ 
+\hline
+250 & 1,69 \\ 
+\hline
+200 & 0,06 \\ 
+\hline
+\end{tabular} 
+\caption{Wertepaare zur Bestimmung der Kennlinie der Laserdiode}\label{kennd}
+\end{table}
+
+Messdaten zur Kennlinie des Nd:YAG Festkörperlasers. Fehler und Skala wie bisher.
+\begin{table}[H]
+\renewcommand*{\arraystretch}{1.2}
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+$I_{Pump}$ in mA & $I_{Photo}$ in mA (Skala)\\
+\hline 
+700 & 14,0  \\ 
+\hline 
+650 & 12,3  \\ 
+\hline 
+600 & 10,5  \\ 
+\hline 
+550 & 9,0  \\ 
+\hline 
+500 & 6,1  \\ 
+\hline
+450 & 5,0 \\ 
+\hline
+400 & 3,9 \\ 
+\hline
+350 & 2,8 \\ 
+\hline
+300 & 1,2 \\ 
+\hline
+\end{tabular} 
+\caption{Wertepaare zur Bestimmung der Kennlinie des Nd:YAG Lasers}\label{kennND}
+\end{table}
+
+Messdaten zum Frequenzverdoppelten Laserlicht bei $\lambda =532\,\si{nm}$. Die Fehler bleiben gleich, jedoch gilt nun, dass $30\,\si{mA}$ auf der Skala einem Photostrom von $0,6\,\si{mA}$ entsprechen.
+Ab einem Pumpstron von $I_{Pump}=500\,\si{mA}$ wurde auf die Skala eine Größenordnung tiefer gewechselt und die gemessenen Werte auf die vorherige Skala angepasst und eingetragen.
+\begin{table}[H]
+\renewcommand*{\arraystretch}{1.2}
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+$I_{Pump}$ in mA & $I_{Photo}$ in mA (Skala)\\
+\hline 
+700 & 3,2  \\ 
+\hline 
+650 & 2,3  \\ 
+\hline 
+600 & 1,45  \\ 
+\hline 
+550 & 1,1  \\ 
+\hline 
+500 & 0,92  \\ 
+\hline
+450 & 0,45 \\ 
+\hline
+400 & 0,37 \\ 
+\hline
+350 & 0,2 \\ 
+\hline
+300 & 0,2 \\ 
+\hline
+\end{tabular} 
+\caption{Wertepaare zur Bestimmung der Kennlinie des KTP-Lasers}\label{kennktp}
+\end{table}
+
+Messdaten zur Bestimmung der restlichen Fundamentalleistung nach dem KTP-Kristall. Es gelten die gleichen Fehler für den Photo- und Pumpstrom wie bisher und $30\,\si{mA}$ auf der Anzeige des Multimeters entsprechen einem Photostrom von $6\,\si{mA}$
+\begin{table}[H]
+\renewcommand*{\arraystretch}{1.2}
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+$I_{Pump}$ in mA & $I_{Photo}$ in mA (Skala)\\
+\hline 
+700 & 5,0  \\ 
+\hline 
+650 & 4,2  \\ 
+\hline 
+600 & 3,6  \\ 
+\hline 
+550 & 3,0  \\ 
+\hline 
+500 & 2,5  \\ 
+\hline
+450 & 1,33 \\ 
+\hline
+400 & 0,85 \\ 
+\hline
+350 & 0,5 \\ 
+\hline
+300 & 0,15 \\ 
+\hline
+\end{tabular} 
+\caption{Wertepaare zur Bestimmung der restlichen Fundamentalleistung}\label{restfund}
+\end{table}
 \chapter{Anhang}
 
 
