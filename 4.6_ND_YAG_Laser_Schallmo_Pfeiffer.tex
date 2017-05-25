@@ -146,12 +146,27 @@ Im nächsten Schritt soll die Kennlinie der Laserdiode aufgenommen werden. Hierf
 Um die Kennlinie des Nd:YAG-Lasers aufzunehmen geht man prinzipiell gleich vor wie zur Bestimmung der Kennlinie der Laserdiode. Hierfür wird der Nd:YAG wieder in den Strahlengang eingebaut und um einen optischen Resonator zu erhalten ein sphärischer Resonatorspiegel hinter diesen eingebaut. Des weiteren wird statt des optischen Abschwächers nun ein RG1000 Farbfilter von Schott verwendet, der für die Pumpstrahlung eine geringe Transmission von $\approx 10^{-4}$ aufweist. Messdaten in \ref{kennND}.
 \section{Einbau und charakterisierung des KTP}
 Nun soll im nächsten Teil des Versuches die Wellenlänge des Nd:YAG-Lasers $\lambda_{Nd:YAG}=1064\,\si{nm}$ mittels eines nicht linearen KTP-Kristalls auf eine Wellenlänge von $\lambda_{KTP}=532\,\si{nm}$ frequenzverdoppelt werden, welche im sichtbaren grünen Spektralbereich liegt. Dafür wird dieser Kristall in den optischen Resonator zwischen den Nd:YAG-Kristall und den Resonatorspiegel eingebaut und der Spiegel so optimiert, dass der Photostrom bei maximalem Pumpstrom ebenfalls maximal wird. Des Weiteren wird der RG1000 Filter gegen einen BG39 Filter getauscht, welcher im Bereich der grünen Wellenlänge eine hohe Transmission aufweist und die Fundamentale ($\lambda_{Nd:YAG}=1064\,\si{nm})$) sowie die Pumpstrahlung ($\lambda_{Pump}=808,4\,\si{nm}$) ausfiltert. Danach wird wie bei den vorherigen Kennlinien verfahren? Die zugehörigen Messdaten befinden sich in \ref{kennktp}.
-Des Weiteren wird eine Messreihe mit dem RG100 Filter mit dem gleichen Aufbau aufgenommen, um die restliche Fundamentalleistung, die nicht im KTP-Kristall frequenzverdoppelt wurde, zu vermessen \ref{restfund}.
+Des Weiteren wird eine Messreihe mit dem RG1000 Filter mit dem gleichen Aufbau aufgenommen, um die restliche Fundamentalleistung, die nicht im KTP-Kristall frequenzverdoppelt wurde, zu vermessen \ref{restfund}.
 \section{Kommerzieller Laserpointer}
 Nachdem im laufe des Versuches ein System ähnlich zu denen in einem grünen Laserpointer aufgebaut und charakterisiert wurde, soll dieses nun im Bezug auf die Leitungseffizienz und restliche Fundamentalleistung verglichen werden. Hierfür wird der Laserpointer sowohl mit dem RG1000 als auch mit dem BG39 Filter vermessen. Zur Bestimmung der in den Pointer gepumpten elektrischen Leitung wird zusätzlich die Betriebsspannung und der Pumpstrom notiert
   
      	
 \chapter{Auswertung}
+\section{Vergleich mit einem kommerziellen Laserpointer}
+Nachdem im Verlauf des Versuches ein grüner Laser der Wellenlänge $\lambda =532\,\si{nm}$ aufgebaut und charakterisiert wurde, soll nun der Vergleich zu einem Laserpointer, welcher auf dem gleichen Prinzip beruht, gezogen werden. Hierfür wurde zunächst die Photodiode sowie die Halterung für die Filter in den Strahlengang des Pointers montiert und dann der Photostrom sowohl mit eingebautem RG1000 als auch BG39 Filter gemessen. Des Weiteren wurde bei ausgeschaltetem Pointer der Untergrund vermessen.
+Zunächst ist zu bemerken, dass sich der Photostrom bei eingebautem RG1000 Filter, welcher eine hohe Transmission für die Fundamentale $\lambda_{Fund.}=1064\,\si{nm}$ aufweist, nicht ändert, während der Pumpstrom erhöht bzw. verringert wird. Der gemessene Photostrom deckt sich außerdem mit der Höhe des gemessenen Untergrundstromes, woraus zu schließen ist, dass keine Messbare Leistung im Bereich der Wellenlänge der Fundamentalen den Laserpointer verlässt. Dies ist auch notwendig, da die Strahlung im Infraroten Bereich liegt, also nicht mit bloßem Auge sichtbar ist und somit den Lidschlussreflex nicht auslösen kann. Bei schlecht gebauten Pointern kann es dazu kommen, dass zwar die eigentliche Laserleistung im Bereich der gewollten Wellenlänge begrenzt ist, doch signifikant mehr Leistung durch die Fundamentale ausgestrahlt wird, was gesundheitliche Folgen nach sich ziehen kann.\\
+Für den Laserpointer wurden folgende Messwerte bestimmt:
+\begin{align}
+I_{Photo}&=0,21\,\si{mA}\\
+I_{Pump}&=199,6\,\si{mA}\\
+V&=2,88\,\si{V}
+\end{align}
+Hieraus ergeben sich für die Lichtleistung unter Berücksichtigung der Transmission $T=0,71$ und der spektralen Empfindlichkeit der Photodiode von $\alpha =0,28\,\si{mA/mW}$ bei $\lambda =532\,\si{nm}$ 
+\begin{equation}
+P_{Pointer}=\frac{I_{Photo}}{T\cdot\alpha}=\frac{0,21\,\si{mA}}{0,71\cdot 0,28\,\si{mA/mW}}=1,06\pm 0,02 \,\si{mW}
+\end{equation}
+Bei einer elektrischen Leitung von $P_{Pump}=I_{Pump}\cdot V=199,6\,\si{mA}\cdot 2,88\,\si{V}=574,85\,\si{mW}$ ergibt sich damit eine Effizienz von $\eta=\frac{P_{Pointer}}{P_{Pump}}=0,184\pm0,003 \%$. Vergleicht man dies mit dem im Versuch aufgebauten Lasersystem mit einer Effizienz von $\eta=\frac{P_{Photo}}{P_{Pump}}=Zahl \%$\\
+$\cdots$
 \chapter{Fazit}
 \chapter{Messdaten}
 Bestimmung der relativen Absorption. Messintervall $\delta T=2\,\si{°C}$, Fehler des Pumpstromes $\Delta I_{Pump}=2\,\si{mA}$, Fehler Temperatur $\Delta T=0,1\,\si{°C}$ Fehler Photostrom $\Delta I_{Photo}=0,2\,\si{mA}$ dieser muss jedoch noch der Skala entsprechend umgerechnet werden. Für diese Messung gilt: $30\,\si{Einheiten}$ auf der Anzeige des Multimeters entsprechen einem Photostrom von $6\,\si{mA}$.
