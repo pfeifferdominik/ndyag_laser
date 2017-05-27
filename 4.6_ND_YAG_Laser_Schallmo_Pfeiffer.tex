@@ -135,23 +135,60 @@ Anschaulich werden zwei Photonen der Frequenz $\omega$ zerstört und ein Photon 
 [2,6,7]	
 \chapter{Versuchsdurchführung und Beobachtung}
 Die Durchführung richtet sich nach der Reihenfolge der Anleitung und ist im groben in sechs Teile gegliedert, welche im Folgenden kurz beschrieben werden sollen. Im Laufe des Versuches wird ein diodengepumpter Festkörperlaser mit einem frequenzverdoppelten Bauteil aufgebaut, der eine Wellenlänge von $\lambda =532\,\si{nm}$ emittiert.Hierfür werden nach und nach weitere Bauteile dem Aufbau hinzugefügt. Systeme dieser Art finden heute weitreichend Anwendung wie z.B. in grünen Laserpointern. Ein solcher wird im letzten Teil des Versuches in einem Gesichtspunkt mit dem aufgebauten System verglichen.
-\section{Realtive Absorption des Nd:YAG}
+\section{Realtive Absorption des Nd:YAG}\label{v1}
 Zu Beginn des Versuches soll zunächst die relative Absorption des Nd:YAG Kristalls in Abhängigkeit der Temperatur der Halbleiterdiode bestimmt werden. Der Aufbau besteht hierfür zunächst aus der Halbleiter-Laserdiode mit Quelle und Temperatursteuerung, einem Kollimator, dem Nd:YAG-Kristall, einem Abschwächer und einer Photodiode. Es werden in Abhängigkeit der Temperatur der Photodiode in einem Intervall von $10\,\si{°C}-40\,\si{°C}$ im Abstand von $2\,\si{°C}$ Werte des Photostromes, sowohl mit als auch ohne Nd:YAG, aufgenommen, wobei die Temperatur bei konstantem Pumpstrom so variiert wird, dass dieser maximal wird. Die Messwerte sind in \ref{relabs} zu sehen.\\
 Ziel ist es, den zum Pumpen des Nd:YAG-Kristalls optimalen Arbeitspunkt des Halbleiterlasers zu finden. Dieser ist bei einer Wellenlänge von $\lambda_{Pump}=808,4\,\si{nm}$ zu finden, diese kann jedoch nicht direkt an der Laserdiode eingestellt werden.
-\section{Arbeitsgerade der Laserdiode}
+\section{Arbeitsgerade der Laserdiode}\label{v2}
 Nachdem im ersten Teil des Versuches die für den maximalen Pumpstrom optimale Temperatur zum Pumpen bestimmt wurde, soll nun für weitere Werte des Pumpstromes die optimale Temperatur gefunden werden, um den Nd:YAG bei einer Wellenlänge von $\lambda_{Pump}=808,4\,\si{nm}$ effektiv zu Pumpen. Hierfür stellt man zunächst den maximalen Pumpstrom von $I_{Pump}=700\,\si{mA}$ und die optimale Temperatur ein und nimmt für weitere, niedrigere Werte des Pumpstromes die Temperatur auf, bei der der Photostrom maximal wird. Die Messwerte sind in \ref{arbger} aufgetragen.
-\section{Kennlinie der Laserdiode}
+\section{Kennlinie der Laserdiode}\label{v3}
 Im nächsten Schritt soll die Kennlinie der Laserdiode aufgenommen werden. Hierfür werden Wertepaare von Pumpstrom und Photostrom aufgenommen werden, wobei die Temperatur jeweils so eingestellt wird, dass man sich entlang der Arbeitsgeraden der Laserdiode bewegt.Hierfür wird der selbse Aufbau wie bisher verwendet, jedoch muss der Nd:YaG-Kristall aus dem Strahlengang entfernt werden. Über die Kennlinie der Diode lässt sich der Schwellstrom der Diode herausfinden. Die Daten zu dieser Messung sind in \ref{kennd} angegeben.
-\section{Kennlinie des Nd:YAG}
+\section{Kennlinie des Nd:YAG}\label{v4}
 Um die Kennlinie des Nd:YAG-Lasers aufzunehmen geht man prinzipiell gleich vor wie zur Bestimmung der Kennlinie der Laserdiode. Hierfür wird der Nd:YAG wieder in den Strahlengang eingebaut und um einen optischen Resonator zu erhalten ein sphärischer Resonatorspiegel hinter diesen eingebaut. Des weiteren wird statt des optischen Abschwächers nun ein RG1000 Farbfilter von Schott verwendet, der für die Pumpstrahlung eine geringe Transmission von $\approx 10^{-4}$ aufweist. Messdaten in \ref{kennND}.
-\section{Einbau und charakterisierung des KTP}
+\section{Einbau und charakterisierung des KTP}\label{v5}
 Nun soll im nächsten Teil des Versuches die Wellenlänge des Nd:YAG-Lasers $\lambda_{Nd:YAG}=1064\,\si{nm}$ mittels eines nicht linearen KTP-Kristalls auf eine Wellenlänge von $\lambda_{KTP}=532\,\si{nm}$ frequenzverdoppelt werden, welche im sichtbaren grünen Spektralbereich liegt. Dafür wird dieser Kristall in den optischen Resonator zwischen den Nd:YAG-Kristall und den Resonatorspiegel eingebaut und der Spiegel so optimiert, dass der Photostrom bei maximalem Pumpstrom ebenfalls maximal wird. Des Weiteren wird der RG1000 Filter gegen einen BG39 Filter getauscht, welcher im Bereich der grünen Wellenlänge eine hohe Transmission aufweist und die Fundamentale ($\lambda_{Nd:YAG}=1064\,\si{nm})$) sowie die Pumpstrahlung ($\lambda_{Pump}=808,4\,\si{nm}$) ausfiltert. Danach wird wie bei den vorherigen Kennlinien verfahren? Die zugehörigen Messdaten befinden sich in \ref{kennktp}.
 Des Weiteren wird eine Messreihe mit dem RG1000 Filter mit dem gleichen Aufbau aufgenommen, um die restliche Fundamentalleistung, die nicht im KTP-Kristall frequenzverdoppelt wurde, zu vermessen \ref{restfund}.
-\section{Kommerzieller Laserpointer}
+\section{Kommerzieller Laserpointer}\label{v6}
 Nachdem im laufe des Versuches ein System ähnlich zu denen in einem grünen Laserpointer aufgebaut und charakterisiert wurde, soll dieses nun im Bezug auf die Leitungseffizienz und restliche Fundamentalleistung verglichen werden. Hierfür wird der Laserpointer sowohl mit dem RG1000 als auch mit dem BG39 Filter vermessen. Zur Bestimmung der in den Pointer gepumpten elektrischen Leitung wird zusätzlich die Betriebsspannung und der Pumpstrom notiert
   
      	
 \chapter{Auswertung}
+Da im Laufe des Versuches der grüne Laser schrittweise aufgebaut wurde, erfolgt auch die  Auswertung des Versuches in derselben Reihenfolge für jedes neue Bauteil. Zu Beginn betrachtet wir zunächst die Halbleiter GaAs-Diode, die zum optischen Pumpen des Nd:YAG-Kristalls verwendet wird.
+\section{Halbleiterlaser}
+Die im Versuch verwendete Halbleiter-Laserdiode ist eine s.g. GaAs/AlGaAs-deiode in einer Doppelheterostruktur, welche bereits in der Vorbereitung näher betrachtet wurde. Um dieses Bauteil besser zu charakterisieren betrachten wir zunächst die Kennlinie dieser Diode, also die Abhängigkeit der Lichtleistung von der elektrisch gepumpten Leistung bzw. dem Pumpstrom $I_{Pump}$. Die Kennlinie wurde wie in \ref{v3} beschrieben bestimmt und ist in \ref{kd} zu sehen.
+\begin{figure}[H]
+\centering
+   	\begin{minipage}[b]{0.9\textwidth}
+   	\includegraphics[width=\textwidth]{graphics/kennlinie_diode.pdf}
+  	\label{kd}
+   	\end{minipage}
+\caption{Kennlinie der Halbleiter-Laserdiode mit Ausgleichsgerade}	
+\end{figure}
+An die Daten wurde ein linearer Fit $P_{Diode}(I_{Pump})=m\cdot I_{Pump} +b $. Für diesen ergaben sich folgende Werte:
+\begin{align}
+m=& 0,0481 \pm 0,002\,\si{\frac{mW}{mA}}\\
+b=& -97,4 \pm 0,9\,\si{mW}
+\end{align}
+Mithilfe dieser Fitfunktion lässt sich der Schwellstrom der Diode, also der minimal nötige Strom um Laseraktivität anzuregen bestimmen zu $I_{Schwelle}=202,44\pm 0,80\,\si{mA}$.\\
+Da Halbleiterlaser eine, in Grenzen, variable Wellenlänge haben, welche von der Temperatur und dem Pumpstrom abhängig ist und die Kennlinie für eine Wellenlänge von $\lambda\approx 808,4\,\si{nm}$ bestimmt werden sollte, ist es nötig sich entlang der für diese Wellenlänge typischen Arbeitsgeraden zu bewegen. Mithilfe dieser lässt sich eine Abhängigkeit der Temperatur vom Pumpstrom bestimmen, bei der die Wellenlänge konstant ist. Bestimmt wurde diese Arbeitsgerade wie in \ref{v2} beschrieben und ist in \ref{ad} dargestellt.
+\begin{figure}[H]
+\centering
+   	\begin{minipage}[b]{0.9\textwidth}
+   	\includegraphics[width=\textwidth]{graphics/arbeitsgerade_hld.pdf}
+  	\label{ad}
+   	\end{minipage}
+\caption{Arbeitsgerade der Halbleiter-Laserdiode mit Ausgleichsgerade}	
+\end{figure}
+Die sich aus dem linearen Fit ergebenden Werte sind:
+\begin{align}
+m=&zahl \pm fehler\,\si{\frac{°C}{mA}}\\
+b=&zahl \pm fehler\,\si{°C}
+\end{align}
+Mithilfe dieser Arbeitsgeraden wurde die Temperatur stets so angepasst, dass die Zentralwellenlänge von $\lambda\approx 808,4\,\si{nm}$ konstant bleibt und der Nd:YAG Effizient gepumpt werden kann.\\
+Als letzten, nur den Halbleiter betreffende Kenngröße soll die differentielle Quanteneffizienz $\eta=\frac{e\cdot P_{Licht}}{h\nu (I-I_{Schwelle})}$ bestimmt werden. Diese stellt das Verhältnis der Zahl der erzeugten bzw. gemessenen Photonen zu der Zahl der gepumpten Elektronen über der Laserschwelle dar. Mit der Steigung der Kennlinie der Diode $m=\frac{P_{Licht}}{I-I_{Schwelle}}$,sowie $h\nu=\frac{hc}{\lambda}$ ($\lambda=808,4\,\si{nm}$) ergibt sich:
+\begin{equation}
+\eta=\frac{e\cdot P_{Licht}}{h\nu (I-I_{Schwelle})}=\frac{e\cdot\lambda\cdot m}{h\cdot c}=0,314 \pm 0,001
+\end{equation}
+Es werden also ca. $30\%$ aller gepumpten Elektronen in Laserphotonen umgewandelt, während die restlichen Elektronen nicht zur Lasertätigkeit im gewünschten Wellenlängenbereich beitragen.
 \section{Vergleich mit einem kommerziellen Laserpointer}
 Nachdem im Verlauf des Versuches ein grüner Laser der Wellenlänge $\lambda =532\,\si{nm}$ aufgebaut und charakterisiert wurde, soll nun der Vergleich zu einem Laserpointer, welcher auf dem gleichen Prinzip beruht, gezogen werden. Hierfür wurde zunächst die Photodiode sowie die Halterung für die Filter in den Strahlengang des Pointers montiert und dann der Photostrom sowohl mit eingebautem RG1000 als auch BG39 Filter gemessen. Des Weiteren wurde bei ausgeschaltetem Pointer der Untergrund vermessen.
 Zunächst ist zu bemerken, dass sich der Photostrom bei eingebautem RG1000 Filter, welcher eine hohe Transmission für die Fundamentale $\lambda_{Fund.}=1064\,\si{nm}$ aufweist, nicht ändert, während der Pumpstrom erhöht bzw. verringert wird. Der gemessene Photostrom deckt sich außerdem mit der Höhe des gemessenen Untergrundstromes, woraus zu schließen ist, dass keine Messbare Leistung im Bereich der Wellenlänge der Fundamentalen den Laserpointer verlässt. Dies ist auch notwendig, da die Strahlung im Infraroten Bereich liegt, also nicht mit bloßem Auge sichtbar ist und somit den Lidschlussreflex nicht auslösen kann. Bei schlecht gebauten Pointern kann es dazu kommen, dass zwar die eigentliche Laserleistung im Bereich der gewollten Wellenlänge begrenzt ist, doch signifikant mehr Leistung durch die Fundamentale ausgestrahlt wird, was gesundheitliche Folgen nach sich ziehen kann.\\
@@ -165,9 +202,10 @@ Hieraus ergeben sich für die Lichtleistung unter Berücksichtigung der Transmis
 \begin{equation}
 P_{Pointer}=\frac{I_{Photo}}{T\cdot\alpha}=\frac{0,21\,\si{mA}}{0,71\cdot 0,28\,\si{mA/mW}}=1,06\pm 0,02 \,\si{mW}
 \end{equation}
-Bei einer elektrischen Leitung von $P_{Pump}=I_{Pump}\cdot V=199,6\,\si{mA}\cdot 2,88\,\si{V}=574,85\,\si{mW}$ ergibt sich damit eine Effizienz von $\eta=\frac{P_{Pointer}}{P_{Pump}}=0,184\pm0,003 \%$. Vergleicht man dies mit dem im Versuch aufgebauten Lasersystem mit einer Effizienz von $\eta=\frac{P_{Photo}}{P_{Pump}}=Zahl \%$\\
-$\cdots$
+Bei einer elektrischen Leitung von $P_{Pump}=I_{Pump}\cdot V=199,6\,\si{mA}\cdot 2,88\,\si{V}=574,85\,\si{mW}$ ergibt sich damit eine Effizienz von $\eta=\frac{P_{Pointer}}{P_{Pump}}=0,184\pm 0,003 \%$. Vergleicht man dies mit dem im Versuch aufgebauten Lasersystem mit einer Effizienz von $\eta=\frac{P_{Photo}}{P_{Pump}}=0,023\pm0,001 \%$, erkennt man das die Effizienz des Laserpointers ungefähr achtmal größer ist, als die des aufgebauten Systems. Dies liegt unter anderem an der händischen Justage des optischen Resonators sowie an der Grundsätzlichen Bauweise der Systeme. Im Versuch hätte eine höhere Effizienz dadurch erzielt werden können, dass der KTP-Kristall ebenfalls in einen eigenen optischen Resonator gepackt wird. Des Weiteren ist zu Beachten, dass alle im Versuch verwendeten Komponenten schon eine Längere Zeit in Verwendung sind und gerade die beiden Kristalle scheinbar einem Alterungsprozess unterliegen der die Güte und damit die Effizienz beeinflusst. Dies wurde im Gespräch mit dem Betreuer besprochen und in bei allen Prozessen beachtet.
+
 \chapter{Fazit}
+$\cdots$
 \chapter{Messdaten}
 Bestimmung der relativen Absorption. Messintervall $\delta T=2\,\si{°C}$, Fehler des Pumpstromes $\Delta I_{Pump}=2\,\si{mA}$, Fehler Temperatur $\Delta T=0,1\,\si{°C}$ Fehler Photostrom $\Delta I_{Photo}=0,2\,\si{mA}$ dieser muss jedoch noch der Skala entsprechend umgerechnet werden. Für diese Messung gilt: $30\,\si{Einheiten}$ auf der Anzeige des Multimeters entsprechen einem Photostrom von $6\,\si{mA}$.
 \begin{table}[H]
