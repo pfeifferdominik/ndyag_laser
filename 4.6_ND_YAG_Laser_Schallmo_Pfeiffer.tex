@@ -199,15 +199,56 @@ Da Halbleiterlaser eine, in Grenzen, variable Wellenlänge haben, welche von der
 \end{figure}
 Die sich aus dem linearen Fit ergebenden Werte sind:
 \begin{align}
-m=&zahl \pm fehler\,\si{\frac{°C}{mA}}\\
-b=&zahl \pm fehler\,\si{°C}
+m=&-0,007 \pm 0,008,\si{\frac{^{\circ} C}{mA}}\\
+b=&24,4 \pm 4,7\,\si{^{\circ} C}
 \end{align}
 Mithilfe dieser Arbeitsgeraden wurde die Temperatur stets so angepasst, dass die Zentralwellenlänge von $\lambda\approx 808,4\,\si{nm}$ konstant bleibt und der Nd:YAG Effizient gepumpt werden kann.\\
-Als letzten, nur den Halbleiter betreffende Kenngröße soll die differentielle Quanteneffizienz $\eta=\frac{e\cdot P_{Licht}}{h\nu (I-I_{Schwelle})}$ bestimmt werden. Diese stellt das Verhältnis der Zahl der erzeugten bzw. gemessenen Photonen zu der Zahl der gepumpten Elektronen über der Laserschwelle dar. Mit der Steigung der Kennlinie der Diode $m=\frac{P_{Licht}}{I-I_{Schwelle}}$,sowie $h\nu=\frac{hc}{\lambda}$ ($\lambda=808,4\,\si{nm}$) ergibt sich:
+Als letzten, nur den Halbleiter betreffende Kenngröße soll die differentielle Quanteneffizienz\\ $\eta=\frac{e\cdot P_{Licht}}{h\nu (I-I_{Schwelle})}$ bestimmt werden. Diese stellt das Verhältnis der Zahl der erzeugten bzw. gemessenen Photonen zu der Zahl der gepumpten Elektronen über der Laserschwelle dar. Mit der Steigung der Kennlinie der Diode $m=\frac{P_{Licht}}{I-I_{Schwelle}}$,sowie $h\nu=\frac{hc}{\lambda}$ ($\lambda=808,4\,\si{nm}$) ergibt sich:
 \begin{equation}
 \eta=\frac{e\cdot P_{Licht}}{h\nu (I-I_{Schwelle})}=\frac{e\cdot\lambda\cdot m}{h\cdot c}=0,314 \pm 0,001
 \end{equation}
 Es werden also ca. $30\%$ aller gepumpten Elektronen in Laserphotonen umgewandelt, während die restlichen Elektronen nicht zur Lasertätigkeit im gewünschten Wellenlängenbereich beitragen.
+\section{Nd:YAG-Laser}
+Nachdem die Halbleiterdiode charakterisiert wurde, wird im nächsten Schritt wie in \ref{v4} beschrieben der Nd:YAG-Kristall samt optischem Resonator in den Strahlengang eingebaut und die mit das System anhand der gemessenen Lichtleistung optimiert. Wie bereits für den Halbleiter wurde auch für das erweiterte System die Kennlinie aufgenommen \ref{kenyag}.
+\begin{figure}[H]
+\centering
+   	\begin{minipage}[b]{0.9\textwidth}
+   	\includegraphics[width=\textwidth]{graphics/kenn_ndyag_PS.pdf}
+  	\label{kenyag}
+   	\end{minipage}
+\caption{Kennlinie des Nd:YAG-Lasers}	
+\end{figure}
+Ein linearer Fit an die Daten ergab folgende Werte:
+\begin{align}
+m=& 0,045 \pm 0,002\,\si{\frac{mW}{mA}}\\
+b=& -12,4 \pm 1,3\,\si{mW}
+\end{align}
+womit der nötige Pumpstrom zu $I_{Schwelle}=275,56\pm 28,92\,\si{mA}$ bestimmt werden konnte. Die Differenz zum Schwellenstrom des Halbleiterlasers beträgt $\Delta I_{Schwelle}\approx 73\,\si{mA}$, da eine gwisse Pumpleistung von Nöten ist um im Nd:YAG-Kristall die Besetzungsinversion zu gewährleisten. In \ref{kenyag2} ist die gemessene Lichtleistung des Nd:YAG Systems in Abhängigkeit der Pumpleistung der Halbleiterdiode aufgetragen. Dabei wurde der Pumpstrom und dessen Fehler mittels \ref{kd} in eine Pumpleistung umgerechnet.
+\begin{figure}[H]
+\centering
+   	\begin{minipage}[b]{0.9\textwidth}
+   	\includegraphics[width=\textwidth]{graphics/kenn_ndyag_pl.pdf}
+  	\label{kenyag2}
+   	\end{minipage}
+\caption{Lichtleistungs-Pumpleistungskennlinie des Nd:YAG}	
+\end{figure}
+Für den linearen Fit ergaben sich:
+\begin{align}
+m=& 0,094 \pm 0,005\\
+b=& -3,3 \pm 0,8
+\end{align}
+Über diese Darstellung lässt sich direkt die minimal nötige Pumpleistung $P_{Schwelle}=35,11\pm 8,71\,\si{mW} $ berechnen. Diese Lichtleistung muss minimal vom Halbleiterlaser geleistet werden, damit im Nd:YAG-Kristall Lasertätigkeit angeregt werden kann.\\
+Durch die Betrachtung der Kennlinien und des Schwellstromes/der Schwellleistung des Nd:YAG-Systems konnten die wichtigsten Charakteristika bereits herausgearbeitet werden. Im nächsten Schritt soll nun die Effizienz betrachtet werden.\\
+Zunächst betrachten wir den Quantenwirkungsgrad $\epsilon=\frac{E_{\lambda_{Nd:YAG}}}{E_{\lambda_{Diode}}}$ welche sich mithilfe von $E_{\lambda}=\frac{hc}{\lambda}$ schreiben lässt als $\epsilon=\frac{\lambda_{Diode}}{\lambda_{Nd:YAG}}=0,76$. Es wird also theoretisch ca. $76\%$ der Pumplichtleistung in Laserlichtleistung der Wellenlänge $\lambda=1064\,\si{nm}$ umgewandelt. Betrachten wir nun noch die tatsächliche totale Leistungseffizienz des Systems $\eta_{P}=\frac{P_{Nd:YAG}}{P_{Pump}}$, welche in \ref{toleist} aufgetragen ist. Erkennbar ist, dass diese für immer größer werdende Pumpleistungen gegen $\eta_{P}\approx 8\%$ strebt.
+\begin{figure}[H]
+\centering
+   	\begin{minipage}[b]{0.9\textwidth}
+   	\includegraphics[width=\textwidth]{graphics/tot_leisteff.pdf}
+  	\label{toleist}
+   	\end{minipage}
+\caption{Totale Leistungseffizienz des gesamten Systems}	
+\end{figure}
+Die Diskrepanz zwischen dem theoretischen Wert und der reellen Effizienz wird durch viele Faktoren beeinflusst. Zum einen ist die erfolgte die Einstellung des optischen Resonators anhand von vier Stellschrauben an Spiegel- und Kristallhalterung und wurde per Augenmaß vorgenommen. Durch eine genauere Justage sind höhere Effizienzgrade erreichbar, würden jedoch zeitlich und aufwandstechnisch den Rahmen des FP sprengen. Des Weiteren scheinen die Komponenten altersbedingt an Effizienz zu verlieren, wie der Vergleich mit den vorhandenen Daten vorheriger Versuchsteilnehmer zeigt. Noch ein Faktor der die Effizienz mindert ist das anregen höherer transversaler Moden. Idealer Weise hätte sowohl der Pumpstrahl als auch der Nd:YAG-Strahl ein transversales Gaußprofil, welches jedoch bei Betrachtung des Strahls mit einer Reflektorkarte nicht der Fall war. Statt nur einem kreisförmigen Punkt gab es zusätzlich noch mehrere Nebenpunktem, die auch durch weitere Justage zwar minimiert werden konnten, sich jedoch nicht ganz verhindern ließen. Auch durch diesen Effekt geht Lichtleistung "'verloren"`.
 \section{Vergleich mit einem kommerziellen Laserpointer}
 Nachdem im Verlauf des Versuches ein grüner Laser der Wellenlänge $\lambda =532\,\si{nm}$ aufgebaut und charakterisiert wurde, soll nun der Vergleich zu einem Laserpointer, welcher auf dem gleichen Prinzip beruht, gezogen werden. Hierfür wurde zunächst die Photodiode sowie die Halterung für die Filter in den Strahlengang des Pointers montiert und dann der Photostrom sowohl mit eingebautem RG1000 als auch BG39 Filter gemessen. Des Weiteren wurde bei ausgeschaltetem Pointer der Untergrund vermessen.
 Zunächst ist zu bemerken, dass sich der Photostrom bei eingebautem RG1000 Filter, welcher eine hohe Transmission für die Fundamentale $\lambda_{Fund.}=1064\,\si{nm}$ aufweist, nicht ändert, während der Pumpstrom erhöht bzw. verringert wird. Der gemessene Photostrom deckt sich außerdem mit der Höhe des gemessenen Untergrundstromes, woraus zu schließen ist, dass keine Messbare Leistung im Bereich der Wellenlänge der Fundamentalen den Laserpointer verlässt. Dies ist auch notwendig, da die Strahlung im Infraroten Bereich liegt, also nicht mit bloßem Auge sichtbar ist und somit den Lidschlussreflex nicht auslösen kann. Bei schlecht gebauten Pointern kann es dazu kommen, dass zwar die eigentliche Laserleistung im Bereich der gewollten Wellenlänge begrenzt ist, doch signifikant mehr Leistung durch die Fundamentale ausgestrahlt wird, was gesundheitliche Folgen nach sich ziehen kann.\\
